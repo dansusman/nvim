@@ -45,6 +45,7 @@ Plug 'mbbill/undotree'
 Plug 'tpope/vim-commentary'
 Plug 'ms-jpq/coq_nvim'
 Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'ThePrimeagen/git-worktree.nvim'
 
 " Telescope stuff
 Plug 'nvim-lua/popup.nvim'
@@ -54,7 +55,15 @@ Plug 'nvim-telescope/telescope-fzy-native.nvim'
 Plug 'sharkdp/fd'
 Plug 'BurntSushi/ripgrep'
 
+" LSP
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/nvim-cmp'
+
 call plug#end()
+
+lua require("susmand")
 
 "COLORS AND THINGS
 
