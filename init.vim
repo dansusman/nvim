@@ -68,9 +68,9 @@ lua require("susmand")
 "COLORS AND THINGS
 
 colorscheme gruvbox
-highlight Normal guibg=none
-
 set background=dark
+hi Normal guibg=NONE
+
 
 let loaded_matchparen = 1
 let mapleader = " "
