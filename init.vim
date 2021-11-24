@@ -39,6 +39,8 @@ set scrolloff=8
 set noshowmode
 set completeopt=menuone,noinsert,noselect
 set signcolumn=yes
+set list
+set listchars=tab:▸\ ,trail:·
 
 "Give more space for displaying messages.
 set cmdheight=2
@@ -89,6 +91,8 @@ let mapleader = " "
 
 "REMAPS
 
+map gf :edit <cfile><CR>
+
 nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>
 nnoremap <Leader>+ :vertical resize +5<CR>
 nnoremap <Leader>- :vertical resize -5<CR>
@@ -131,5 +135,11 @@ inoremap , ,<c-g>u
 inoremap . .<c-g>u
 inoremap ! !<c-g>u
 inoremap ? ?<c-g>u
+
+" Reselect visual selection after indenting
+vnoremap < <gv
+vnoremap > >gv
+
+nmap <leader>x :!open %<CR><CR>
 
 "FUNCTIONS
